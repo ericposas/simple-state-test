@@ -14,7 +14,7 @@ const getBook = ()=>{
       app.setState('DATA_RETRIEVED', ()=>{ organizeData(response) })
     })
     .catch(err=>{
-      console.log(err)
+      app.setState('ERROR', ()=>{ console.log(err) })
     })
 }
 
